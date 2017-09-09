@@ -1,0 +1,100 @@
+{
+    "projects":
+    [
+        {
+            "id": "00",
+            "symbol": "Project 1",
+            "brand": "NIKE",
+            "role": "Devloper and Designer",
+            "offsetLeft": 1,
+            "offsetRight": 2,
+            "col": 8,
+            "description":"Dope work description here to describe the project in a decent amount of words",
+            "agency": "Google",
+            "dev": "React, Rails",
+            "link":{
+                "label": "Visit Website ¬",
+                "url": "https://insidediscovery.pitchfork.com/"
+            },
+            "img":{
+                "url": "../img/project-1.jpg"
+            }
+        },
+        {
+            "id": "01",
+            "symbol": "Project 2",
+            "brand": "ALEXANDRE ROCHET",
+            "role": "Devloper and Designer",
+            "offsetLeft": 1,
+            "offsetRight": 2,
+            "col": 8,
+            "description":"Dope work description here to describe the project in a decent amount of words",
+            "agency": "Google",
+            "dev": "React, Rails",
+            "link":{
+                "label": "Visit Website ¬",
+                "url": "https://insidediscovery.pitchfork.com/"
+            },
+            "img":{
+                "url": "../img/project-2.jpg"
+            }
+        },
+        {
+            "id": "02",
+            "symbol": "Project 3",
+            "brand": "ALEXANDRE ROCHET",
+            "role": "Devloper and Designer",
+            "offsetLeft": 1,
+            "offsetRight": 2,
+            "col": 8,
+            "description":"Dope work description here to describe the project in a decent amount of words",
+            "agency": "Google",
+            "dev": "React, Rails",
+            "link":{
+                "label": "Visit Website ¬",
+                "url": "https://insidediscovery.pitchfork.com/"
+            },
+            "img":{
+                "url": "../img/project-3.jpg"
+            }
+        },
+        {
+            "id": "03",
+            "symbol": "Project 4",
+            "brand": "ALEXANDRE ROCHET",
+            "role": "Devloper and Designer",
+            "offsetLeft": 1,
+            "offsetRight": 2,
+            "col": 8,
+            "description":"Dope work description here to describe the project in a decent amount of words",
+            "agency": "Google",
+            "dev": "React, Rails",
+            "link":{
+                "label": "Visit Website ¬",
+                "url": "https://insidediscovery.pitchfork.com/"
+            },
+            "img":{
+                "url": "../img/project-4.jpg"
+            }
+        },
+        {
+            "id": "04",
+            "symbol": "Project 5",
+            "brand": "ALEXANDRE ROCHET",
+            "role": "Devloper and Designer",
+            "offsetLeft": 1,
+            "offsetRight": 2,
+            "col": 8,
+            "description":"Dope work description here to describe the project in a decent amount of words",
+            "agency": "Google",
+            "dev": "React, Rails",
+            "link":{
+                "label": "Visit Website ¬",
+                "url": "https://insidediscovery.pitchfork.com/"
+            },
+            "img":{
+                "url": "../img/project-5.jpg"
+            }
+        }        
+    ]
+}
