@@ -1,12 +1,16 @@
 import React from 'react'
+import { connect } from 'react-redux'
+import { bindActionCreators } from 'redux'
+import * as actions from '../actions/projectsActions'
 
 const ProjectControls = (props) => {
+
 	const handleNext = () => {
-		props.nextProject()
+		props.actions.incrementProject()
 	}
 
 	const handlePrevious = () => {
-		props.previousProject()
+		props.actions.decrementProject()
 	}
 
 	return (
@@ -17,4 +21,8 @@ const ProjectControls = (props) => {
 		)
 }
 
-export default ProjectControls
+const mapDispatchToProps = dispatch => ({
+	actions: bindActionCreators(actions, dispatch)
+})
+
+export default connect(null, mapDispatchToProps)(ProjectControls)
