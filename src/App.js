@@ -5,6 +5,7 @@ import { fetchProjectData } from './actions/projectsActions'
 import SplashScreen from './components/SplashScreen'
 import Header from './components/Header'
 import ProjectContainer from './components/ProjectContainer'
+import About from './components/About'
 
 import data from './components/projects.json'
 
@@ -23,6 +24,7 @@ class App extends Component {
         <SplashScreen />
         <div className="wrapper">
           <Header />
+          <About />
           <ProjectContainer />
         </div>
 
