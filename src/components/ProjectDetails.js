@@ -8,7 +8,13 @@ class ProjectDetails extends React.Component {
 	}
 
 	render() {
+		console.log('project details: ', this.props)
 		return (
+			<div>
+				<p>{this.props.currentProjectData.description}</p>
+			</div>
 			)
 	}
 }
+
+export default ProjectDetails

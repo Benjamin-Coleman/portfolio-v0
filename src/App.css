@@ -141,7 +141,7 @@ body {
 
 .project.header-wrapper {
   overflow: hidden;
-  bottom: 50px;
+  bottom: 100px;
   left: 50px;
   position: absolute;
   z-index: 4;

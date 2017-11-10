@@ -7,6 +7,7 @@ import * as actions from '../actions/projectsActions'
 import ProjectImage from './ProjectImage'
 import ProjectControls from './ProjectControls'
 import ProjectHeader from './ProjectHeader'
+import ProjectDetails from './ProjectDetails'
 
 class ProjectContainer extends React.Component {
 
@@ -123,6 +124,7 @@ class ProjectContainer extends React.Component {
 				<ProjectImage />
 				<ProjectControls currentProject={this.state.currentProject} nextProject={this.nextProject} previousProject={this.previousProject} />
 				<ProjectHeader title={this.state.projects[this.props.currentIndex].symbol} />
+				<ProjectDetails currentProjectData={this.state.projects[this.props.currentIndex]}/>
 			</div>
 			)
 	}
