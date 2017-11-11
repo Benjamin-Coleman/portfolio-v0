@@ -123,8 +123,10 @@ class ProjectContainer extends React.Component {
 
 				<ProjectImage />
 				<ProjectControls currentProject={this.state.currentProject} nextProject={this.nextProject} previousProject={this.previousProject} />
-				<ProjectHeader title={this.state.projects[this.props.currentIndex].symbol} />
-				<ProjectDetails currentProjectData={this.state.projects[this.props.currentIndex]}/>
+				<div className='project-details-wrapper'>
+					<ProjectHeader title={this.state.projects[this.props.currentIndex].symbol} />
+					<ProjectDetails currentProjectData={this.state.projects[this.props.currentIndex]}/>
+				</div>
 			</div>
 			)
 	}

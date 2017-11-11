@@ -1,0 +1,105 @@
+* {
+	text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('/assets/fonts/AvenirLT-HeavyOblique.eot');
+    src: url('/assets/fonts/AvenirLT-HeavyOblique.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/AvenirLT-HeavyOblique.woff') format('woff'),
+        url('/assets/fonts/AvenirLT-HeavyOblique.ttf') format('truetype'),
+        url('/assets/fonts/AvenirLT-HeavyOblique.svg#AvenirLT-HeavyOblique') format('svg');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('/assets/fonts/AvenirLT-Roman.eot');
+    src: url('/assets/fonts/AvenirLT-Roman.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/AvenirLT-Roman.woff') format('woff'),
+        url('/assets/fonts/AvenirLT-Roman.ttf') format('truetype'),
+        url('/assets/fonts/AvenirLT-Roman.svg#AvenirLT-Roman') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('/assets/fonts/AvenirLT-Heavy.eot');
+    src: url('/assets/fonts/AvenirLT-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/AvenirLT-Heavy.woff') format('woff'),
+        url('/assets/fonts/AvenirLT-Heavy.ttf') format('truetype'),
+        url('/assets/fonts/AvenirLT-Heavy.svg#AvenirLT-Heavy') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('/assets/fonts/AvenirLT-Oblique.eot');
+    src: url('/assets/fonts/AvenirLT-Oblique.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/AvenirLT-Oblique.woff') format('woff'),
+        url('/assets/fonts/AvenirLT-Oblique.ttf') format('truetype'),
+        url('/assets/fonts/AvenirLT-Oblique.svg#AvenirLT-Oblique') format('svg');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('/assets/fonts/AvenirLT-Light.eot');
+    src: url('/assets/fonts/AvenirLT-Light.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/AvenirLT-Light.woff') format('woff'),
+        url('/assets/fonts/AvenirLT-Light.ttf') format('truetype'),
+        url('/assets/fonts/AvenirLT-Light.svg#AvenirLT-Light') format('svg');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('/assets/fonts/AvenirLT-Medium.eot');
+    src: url('/assets/fonts/AvenirLT-Medium.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/AvenirLT-Medium.woff') format('woff'),
+        url('/assets/fonts/AvenirLT-Medium.ttf') format('truetype'),
+        url('/assets/fonts/AvenirLT-Medium.svg#AvenirLT-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('/assets/fonts/AvenirLT-BookOblique.eot');
+    src: url('/assets/fonts/AvenirLT-BookOblique.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/AvenirLT-BookOblique.woff') format('woff'),
+        url('/assets/fonts/AvenirLT-BookOblique.ttf') format('truetype'),
+        url('/assets/fonts/AvenirLT-BookOblique.svg#AvenirLT-BookOblique') format('svg');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('/assets/fonts/AvenirLT-MediumOblique.eot');
+    src: url('/assets/fonts/AvenirLT-MediumOblique.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/AvenirLT-MediumOblique.woff') format('woff'),
+        url('/assets/fonts/AvenirLT-MediumOblique.ttf') format('truetype'),
+        url('/assets/fonts/AvenirLT-MediumOblique.svg#AvenirLT-MediumOblique') format('svg');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('/assets/fonts/AvenirLT-Book.eot');
+    src: url('/assets/fonts/AvenirLT-Book.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/AvenirLT-Book.woff') format('woff'),
+        url('/assets/fonts/AvenirLT-Book.ttf') format('truetype'),
+        url('/assets/fonts/AvenirLT-Book.svg#AvenirLT-Book') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}

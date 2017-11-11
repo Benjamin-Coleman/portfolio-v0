@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
@@ -12,7 +13,9 @@ let store = createStore(reducers, window.__REDUX_DEVTOOLS_EXTENSION__ && window.
 
 ReactDOM.render(
 	<Provider store={store}>
-		<App />
+		<Router>
+			<Route path="/" component={App} />
+		</Router>
 	</Provider>, 
 	document.getElementById('root'));
 registerServiceWorker();

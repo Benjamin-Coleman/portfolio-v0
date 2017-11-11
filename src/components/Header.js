@@ -23,7 +23,7 @@ class Header extends React.Component {
 	render() {
 		return (
 			<div>
-				<div ref="header" className="header"><p>Portfolio V0</p></div>
+				<div ref="header" className="header"><p>Portfolio V0</p><p>Benjamin Coleman</p></div>
 			</div>
 			)
 	}

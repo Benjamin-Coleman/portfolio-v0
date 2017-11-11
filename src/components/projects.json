@@ -9,12 +9,12 @@
             "offsetLeft": 1,
             "offsetRight": 2,
             "col": 8,
-            "description":"Dope work description here to describe the project in a decent amount of words",
+            "description":"Flashion is intended to make it easy for smaller brands to show off their new looks for each season and to get the word out to their customers.",
             "agency": "Google",
-            "dev": "React, Rails",
+            "dev": "Node.js, MonogDB, React, Express",
             "link":{
                 "label": "Visit Website ¬",
-                "url": "https://insidediscovery.pitchfork.com/"
+                "url": "https://flashion-flow.herokuapp.com/"
             },
             "img":{
                 "url": "../img/project-1.jpg"

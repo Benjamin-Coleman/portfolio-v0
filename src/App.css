@@ -1,3 +1,5 @@
+@import 'Fonts.css';
+
 html {
   width: 100%;
   height: 100%;
@@ -9,7 +11,7 @@ body {
   background: #fff;
   width: 100%;
   height: 100%;
-  font-family: "proxima-nova",sans-serif;
+  font-family: "Avenir",sans-serif;
   font-style: normal;
   font-weight: 400;
 }
@@ -101,6 +103,9 @@ body {
   position: absolute;
   top: 43px;
   left: 70px;
+  width: calc(100% - 140px);
+  display: flex;
+  justify-content: space-between;
 }
 
 .header p {
@@ -141,17 +146,18 @@ body {
 
 .project.header-wrapper {
   overflow: hidden;
-  bottom: 100px;
-  left: 50px;
-  position: absolute;
+  position: relative;
   z-index: 4;
 }
 
 .project.header-wrapper h2 {
-  font-size: 5em;
+  font-size: 7em;
   color: #fff;
   margin: 0;
   opacity: 0;
+  font-family: "minion-pro-display",serif;
+  font-style: normal;
+  font-weight: 400;
 }
 
 .header-overlay{
@@ -197,4 +203,83 @@ body {
   right: 0;
   position: fixed;
   height: 100%;
+}
+
+.project-details-wrapper {
+  max-width: 600px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 250px;
+  width: 50%;
+  padding-left: 80px;
+}
+
+.project-description-wrapper {
+    overflow: hidden;
+    position: relative;
+    z-index: 4;
+    max-width: 600px;
+}
+
+.project-description-wrapper p {
+  color: rgba(255, 255, 255, 0.80);
+  font-size: 18px;
+  letter-spacing: 0.02em;
+  line-height: 1.3;
+  font-weight: 300;
+  margin: 0 0 0 30px;
+}
+
+.project-tech-wrapper {
+    overflow: hidden;
+    top: 0;
+    position: absolute;
+    z-index: 4;
+    max-width: 600px;
+}
+
+.project-tech-wrapper p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 12px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  margin-left: 5px;
+}
+
+.counter {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.counter > div {
+  display: inline-block;
+}
+
+.counter p {
+  font-family: "minion-pro-display",serif;
+  font-size: 2em;
+  letter-spacing: 10px;
+  margin: 0;
+  color: rgba(0, 0, 0, 0.5);
+  display: inline-block;
+}
+
+.number-mask {
+  overflow: hidden;
+  height: 36px;
+}
+
+.numbers span {
+  display: block;
+  font-family: "minion-pro-display",serif;
+  font-size: 2em;
+  letter-spacing: 10px;
+  margin: 0;
+  color: rgba(0, 0, 0, 0.5);
+  line-height: 36px;
 }
