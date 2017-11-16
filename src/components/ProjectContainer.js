@@ -3,6 +3,7 @@ import data from './projects.json'
 import { TweenMax, TimelineMax } from 'gsap'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
+import { Link } from 'react-router-dom'
 import * as actions from '../actions/projectsActions'
 import ProjectImage from './ProjectImage'
 import ProjectControls from './ProjectControls'
@@ -117,16 +118,18 @@ class ProjectContainer extends React.Component {
 	// }
 
 	render() {
-		console.log(this.props.currentIndex)
+		const sanitizedURL = '/projects/' + this.props.projects[this.props.currentIndex].symbol.split(' ').join('').toLowerCase()
+		console.log(this.props)
 		return (
 			<div className="projects-container">
-
 				<ProjectImage />
 				<ProjectControls currentProject={this.state.currentProject} nextProject={this.nextProject} previousProject={this.previousProject} />
+				<Link to={sanitizedURL}>
 				<div className='project-details-wrapper'>
 					<ProjectHeader title={this.state.projects[this.props.currentIndex].symbol} />
 					<ProjectDetails currentProjectData={this.state.projects[this.props.currentIndex]}/>
 				</div>
+				</Link>
 			</div>
 			)
 	}
@@ -135,6 +138,7 @@ class ProjectContainer extends React.Component {
 const mapStateToProps = state => ({
 	currentIndex: state.projectReducer.currentIndex,
 	// projects: state.projects
+	projects: state.projectReducer.projects
 })
 
 const mapDispatchToProps = dispatch => ({

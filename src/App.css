@@ -113,9 +113,15 @@ body {
   font-size: .8em;
   letter-spacing: 2px;
   color: #585858;
+  font-family: 'Avenir', sans-serif;
+  font-weight: 300;
 }
 
 /* Project Controls */
+
+.project-controls-wrapper {
+  z-index: 3;
+}
 
 .project-controls {
   width: 50px;
@@ -213,6 +219,7 @@ body {
   height: 250px;
   width: 50%;
   padding-left: 80px;
+  z-index: 4;
 }
 
 .project-description-wrapper {
@@ -282,4 +289,17 @@ body {
   margin: 0;
   color: rgba(0, 0, 0, 0.5);
   line-height: 36px;
+}
+
+.closeProject {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: #222;
+  font-size: 32px;
+  z-index: 5;
+}
+
+.closeProject p {
+  margin: 0;
 }

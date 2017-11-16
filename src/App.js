@@ -8,6 +8,7 @@ import Header from './components/Header'
 import ProjectContainer from './components/ProjectContainer'
 import About from './components/About'
 import Counter from './components/Counter'
+import Project from './components/Project'
 
 import data from './components/projects.json'
 
@@ -29,6 +30,7 @@ class App extends Component {
           <About Route exact path='/' />
           <ProjectContainer Route exact path='/' />
           <Counter Route exact path='/' />
+          <Route exact path='/projects/:title' component={Project} />
         </div>
 
       </div>
