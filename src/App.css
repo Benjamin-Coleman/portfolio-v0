@@ -14,11 +14,30 @@ body {
   font-family: "Avenir",sans-serif;
   font-style: normal;
   font-weight: 400;
+  max-height: 100vh;
+}
+
+body.scroll {
+  min-height: 100vh;
+  max-height: auto;
+  overflow: auto;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 ::selection {
   background: #222;
   color: white;
+}
+
+body.scroll #root, body.scroll .App {
+  overflow: auto;
 }
 
 #root, .App {
@@ -29,10 +48,10 @@ body {
 }
 
 .wrapper {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+    /* position: relative;
+    width: 100%; */
+    /* height: 100%; */
+    /* overflow: hidden; */
 }
 
 /*Splash Screen*/
@@ -297,9 +316,84 @@ body {
   top: 20px;
   color: #222;
   font-size: 32px;
+  font-weight: 200;
   z-index: 5;
 }
 
 .closeProject p {
   margin: 0;
 }
+
+.project-info-wrapper {
+  margin: 100vh auto 0 auto;
+  padding: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+}
+
+.project-info-wrapper .category {
+  font-size: 12px;
+  color: #888888;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.project-title-wrapper {
+  width: 50%;
+}
+
+.project-overview-wrapper {
+  width: 50%;
+}
+
+.project-title-wrapper h2 {
+  font-size: 3em;
+  font-family: "minion-pro-display",serif;
+  font-style: italic;
+  font-weight: 400;
+  color: #111111;
+  margin: 5px 0;
+}
+
+.project-title-wrapper h3 {
+    font-weight: 400;
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+.project-overview-wrapper p {
+  font-size: 1.2em;
+  margin: 10px 0;
+} 
+
+.project-overview-wrapper a {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  text-decoration: none;
+  color: #111;
+  font-size: 1.2em;
+  /* text-transform: uppercase; */
+  font-style: italic;
+  letter-spacing: 1px;
+  font-family: 'minion-pro-display', sans-serif;
+  font-weight: 400;
+  margin: 5px 0 5px 5px;
+}
+/* 
+.project-overview-wrapper a:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #111;
+  bottom: 0;
+  left: 0;
+  transition: transform 1000ms cubic-bezier(.19,1,.22,1) 0ms,-webkit-transform 1000ms cubic-bezier(.19,1,.22,1) 0ms;
+}
+
+.project-overview-wrapper a:hover:before {
+  transform: translateX(100%);
+} */

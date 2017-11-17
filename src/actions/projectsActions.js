@@ -25,3 +25,16 @@ export const fetchProjectData = (data) => {
 		payload: data
 	}
 }
+
+export const projectOpen = () => {
+	return {
+		type: 'PROJECT_OPEN'
+	}
+}
+
+
+export const projectClose = () => {
+	return {
+		type: 'PROJECT_CLOSE'
+	}
+}

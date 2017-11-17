@@ -1,6 +1,7 @@
  const projectReducer = (state={
     currentIndex: 0,
-    projects: []
+    projects: [],
+    projectOpen: false
   }, action) => {
     switch (action.type) {
       case "SET_PHOTO_INDEX": {
@@ -27,6 +28,12 @@
       case "PREVIOUS_PROJECT": {
         const currentIndex = (state.currentIndex > 0 ) ? state.currentIndex - 1 : state.projects.length - 1;
         return {...state, currentIndex: currentIndex}
+      }
+      case "PROJECT_OPEN": {
+        return { ...state, projectOpen: true }
+      }
+      case "PROJECT_CLOSE": {
+        return { ...state, projectOpen: false }
       }
       default: {
         return state

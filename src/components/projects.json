@@ -9,12 +9,13 @@
             "offsetLeft": 1,
             "offsetRight": 2,
             "col": 8,
-            "description":"Flashion is intended to make it easy for smaller brands to show off their new looks for each season and to get the word out to their customers.",
+            "description":"Create your own lookbook to fit your brand. Select your photos, descriptions and product links, pick a template, edit to your style. Send your lookbook out to your customers.",
             "agency": "Google",
-            "dev": "Node.js, MonogDB, React, Express",
+            "dev": "React, Redux, Node.js, MongoDB, Express",
             "link":{
                 "label": "Visit Website ¬",
-                "url": "https://flashion-flow.herokuapp.com/"
+                "url": "https://flashion-flow.herokuapp.com/",
+                "github": "https://github.com/Benjamin-Coleman/flashion-client"
             },
             "img":{
                 "url": "../img/project-1.jpg"
@@ -33,7 +34,8 @@
             "dev": "React, Rails",
             "link":{
                 "label": "Visit Website ¬",
-                "url": "https://insidediscovery.pitchfork.com/"
+                "url": "https://insidediscovery.pitchfork.com/",
+                "github": ""
             },
             "img":{
                 "url": "../img/project-2.jpg"

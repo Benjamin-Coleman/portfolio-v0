@@ -9,6 +9,7 @@ import ProjectImage from './ProjectImage'
 import ProjectControls from './ProjectControls'
 import ProjectHeader from './ProjectHeader'
 import ProjectDetails from './ProjectDetails'
+import { projectOpen } from '../actions/projectsActions';
 
 class ProjectContainer extends React.Component {
 
@@ -30,9 +31,23 @@ class ProjectContainer extends React.Component {
     	this.visualEls[0].classList.add('--is-active')
 	}
 
+	componentWillReceiveProps = nextProps => {
+		if (nextProps.projectOpen) {
+			this.removeListeners()
+		}
+		else if (this.props.projectOpen && nextProps.projectOpen === false) {
+			this.addListerners()
+		}
+	}
+
 	addListerners = () => {
     	document.addEventListener('keyup', this.onKeyUp, false)
     	document.addEventListener('wheel', this.onWheel, false)
+	}
+	
+	removeListeners = () => {
+		document.removeEventListener('keyup', this.onKeyUp, false)
+		document.removeEventListener('wheel', this.onWheel, false)
 	}
 
 	onKeyUp = (ev) => {
@@ -138,7 +153,8 @@ class ProjectContainer extends React.Component {
 const mapStateToProps = state => ({
 	currentIndex: state.projectReducer.currentIndex,
 	// projects: state.projects
-	projects: state.projectReducer.projects
+	projects: state.projectReducer.projects,
+	projectOpen: state.projectReducer.projectOpen
 })
 
 const mapDispatchToProps = dispatch => ({
