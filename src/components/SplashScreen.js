@@ -1,5 +1,5 @@
 import React from 'react'
-import { TweenMax } from 'gsap'
+import { TimelineMax, TweenMax } from 'gsap'
 
 export default class SplashScreen extends React.Component {
 
@@ -8,12 +8,18 @@ export default class SplashScreen extends React.Component {
 	}
 
 	componentDidMount() {
-		this.fadeOutAnimation()
+		this.tl = new TimelineMax()
+		this.tl.add(this.fadeOutAnimation)
+		// this.fadeOutAnimation()
 	}
 
 	render() {
 		return (
-			<div className="splash-screen" ref="splashScreen"></div>
+			<div className="splash-screen" ref="splashScreen">
+				<div>
+					<h2></h2>
+				</div>
+			</div>
 			)
 	}
 }

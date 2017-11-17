@@ -24,7 +24,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <SplashScreen Route exact path='/' />
+        <SplashScreen/>
         <div className="wrapper">
           <Header Route exact path='/' />
           <About Route exact path='/' />

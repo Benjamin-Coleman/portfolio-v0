@@ -1,5 +1,5 @@
 import React from 'react'
-import { TimelineMax, Power2 } from 'gsap'
+import { TimelineMax, Power2, Expo } from 'gsap'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import { Link } from 'react-router-dom'
@@ -21,16 +21,18 @@ class Project extends React.Component {
         this.projectContainer = document.querySelector('.projects-container')
         this.closeProject = document.querySelector('.closeProject')
         this.projectControls = document.querySelectorAll('.project-controls')
+        this.projectHeader = document.querySelector('.project-header h1')
 
         this.tl.clear();
         this.tl.kill();
         
         // this.detailsEl.classList.add('--hidden')
         this.tl
-            .to(this.detailsEl, 1, {autoAlpha: 0,vease: Power2.easeOut})
+            .to(this.detailsEl, 1, {autoAlpha: 0, ease: Expo.easeOut})
             // this would be better if it was animating transforms instead of size/position
-            .to(this.projectContainer, 0.7, {top: 0, left: 0, height: '100%', width: '100%', ease: Power2.easeOut})
+            .to(this.projectContainer, 0.7, {top: 0, left: 0, height: '100%', width: '100%', ease: Expo.easeInOut}, "-=.5")
             .to(this.projectControls, 0.5, {autoAlpha: 0, ease: Power2.easeOut}, "-=.5")
+            .from(this.projectHeader, 0.5, {y: 150, ease: Power2.easeOut}, "-=.5")
             .from(this.closeProject, 0.5, {autoAlpha: 0, ease: Power2.easeIn})
         this.tl.play(0)
     }
@@ -48,6 +50,9 @@ class Project extends React.Component {
                         <p>X</p>
                     </div>
                 </Link>
+                <div className='project-header'>
+                    <h1>{this.props.currentProject.symbol}</h1>
+                </div>
                 <div className='project-info-wrapper'>
                     <div className='project-title-wrapper'>
                         <span className='category'>Title</span>
