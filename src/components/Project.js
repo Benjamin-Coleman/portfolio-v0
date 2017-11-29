@@ -2,7 +2,8 @@ import React from 'react'
 import { TimelineMax, Power2, Expo } from 'gsap'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
-import { Link } from 'react-router-dom'
+import { withRouter } from 'react-router-dom'
+import DelayLink from './DelayLink'
 import * as actions from '../actions/projectsActions'
 
 class Project extends React.Component {
@@ -14,6 +15,7 @@ class Project extends React.Component {
     }
 
     componentDidMount() {
+        this.addEventListeners()
         this.props.actions.projectOpen()
         document.querySelector('body').classList.add('scroll')
 
@@ -37,7 +39,23 @@ class Project extends React.Component {
         this.tl.play(0)
     }
 
+    onEscapeKey = e => {
+        if (e.keyCode === 27) {
+            this.tl.reverse()
+            this.props.actions.projectClose()
+            setTimeout(() => this.props.history.push("/"), 1000)
+        }
+    }
+
+    addEventListeners = () => {
+        document.addEventListener('keyup', this.onEscapeKey, false);
+    }
+
     componentWillUnmount() {
+        this.closeProjectAnimation()
+    }
+
+    closeProjectAnimation = () => {
         this.tl.reverse()
         this.props.actions.projectClose()
     }
@@ -45,11 +63,15 @@ class Project extends React.Component {
     render() {
         return (
             <div>
-                <Link to='/'>
+                <DelayLink to='/' delay={1000} onDelayStart={ this.closeProjectAnimation }>
                     <div className='closeProject'>
                         <p>X</p>
                     </div>
-                </Link>
+                </DelayLink>
+                <div className='scroll-prompt'>
+                    <p>Scroll</p>
+                    <p className='arrow'>←</p>
+                </div>
                 <div className='project-header'>
                     <h1>{this.props.currentProject.symbol}</h1>
                 </div>

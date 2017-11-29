@@ -125,7 +125,7 @@ body.scroll #root, body.scroll .App {
 
 .header {
   position: absolute;
-  top: 43px;
+  top: 41px;
   left: 70px;
   width: calc(100% - 140px);
   display: flex;
@@ -236,7 +236,7 @@ body.scroll #root, body.scroll .App {
 }
 
 .project-details-wrapper {
-  max-width: 600px;
+  /* max-width: 600px; */
   position: absolute;
   bottom: 0;
   left: 0;
@@ -244,6 +244,7 @@ body.scroll #root, body.scroll .App {
   width: 50%;
   padding-left: 80px;
   z-index: 4;
+  margin-top: -15px;
 }
 
 .project-description-wrapper {
@@ -319,14 +320,50 @@ body.scroll #root, body.scroll .App {
   position: absolute;
   right: 20px;
   top: 20px;
-  color: #222;
-  font-size: 32px;
+  color: #666;
+  font-size: 20px;
   font-weight: 200;
   z-index: 5;
+  height: 40px;
+  width: 40px;
+  border-radius: 30px;
+  text-align: center;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .closeProject p {
   margin: 0;
+}
+
+.scroll-prompt {
+  position: fixed;
+  bottom: 50px;
+  left: 50px;
+  z-index: 5;
+
+}
+
+.scroll-prompt p {
+  transform-origin: top left;
+  transform: rotate(-90deg);
+  letter-spacing: 2px;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 200;
+}
+
+.scroll-prompt .arrow {
+  animation: 'bounce' 2s infinite;
+}
+
+@keyframes bounce {
+  0% {transform: translateY(0px) rotate(-90deg)}
+  50% {transform: translateY(10px) rotate(-90deg)}
+  100% {transform: translateY(0px) rotate(-90deg)}
 }
 
 .project-header {
