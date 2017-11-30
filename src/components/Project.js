@@ -4,6 +4,7 @@ import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import { withRouter } from 'react-router-dom'
 import DelayLink from './DelayLink'
+import { animateScroll } from 'react-scroll'
 import * as actions from '../actions/projectsActions'
 
 class Project extends React.Component {
@@ -56,6 +57,7 @@ class Project extends React.Component {
     }
 
     closeProjectAnimation = () => {
+        animateScroll.scrollToTop({duration: 300, smooth: true})
         this.tl.reverse()
         this.props.actions.projectClose()
     }
