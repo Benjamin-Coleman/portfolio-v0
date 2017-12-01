@@ -71,6 +71,9 @@ class About extends React.Component {
                         <h2>About</h2>
                         <p>Hi, I'm Ben. I'm a fullstack developer with a love for creative design, coffee and basketball. Currently in Brooklyn, NY looking for an opportunity making things.</p>
                         <h4>Get in touch</h4>
+                        <p>
+                            <a href="mailto:hello@benjamincoleman.me" target="_blank">Mail</a> / <a href="https://github.com/Benjamin-Coleman" target="_blank">Github</a> / <a href="https://medium.com/@benjamin.c.coleman/" target="_blank">Medium</a>
+                        </p>
                     </div>
                 </div>
             </div>

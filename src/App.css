@@ -91,6 +91,13 @@ body.scroll #root, body.scroll .App {
     transform: translate3d(-50%,-50%,0);*/
 }
 
+@media only screen and (max-width: 700px) {
+  .projects-container {
+    left: 10px;
+    width: calc(100% - 20px);
+  }
+}
+
 .project.project-image {
   width: 100%;
   height: 100%;
@@ -241,17 +248,27 @@ body.scroll #root, body.scroll .App {
   bottom: 0;
   left: 0;
   height: 250px;
-  width: 50%;
+  width: 70%;
   padding-left: 80px;
   z-index: 4;
   margin-top: -15px;
+}
+
+@media only screen and (max-width: 600px) {
+  .project-details-wrapper {
+    padding: 0;
+    width: 100%;
+  }
+  .project-description-wrapper p {
+    font-size: 12px;
+  }
 }
 
 .project-description-wrapper {
     overflow: hidden;
     position: relative;
     z-index: 4;
-    max-width: 600px;
+    max-width: 700px;
 }
 
 .project-description-wrapper p {
@@ -277,6 +294,15 @@ body.scroll #root, body.scroll .App {
   letter-spacing: .1em;
   text-transform: uppercase;
   margin-left: 5px;
+}
+
+@media only screen and (max-width: 700px) {
+  .project.header-wrapper h2 {
+    font-size: 2em;
+  }
+  .project-tech-wrapper {
+    top: -20px;
+  }
 }
 
 .counter {
@@ -376,13 +402,19 @@ body.scroll #root, body.scroll .App {
 }
 
 .project-header h1 {
-  font-size: 7em;
+  font-size: 6em;
   color: white;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
   display: block;
   margin: 0;
+}
+
+@media only screen and (max-width: 700px) {
+  .project-header h1 {
+    font-size: 2em;
+  }
 }
 
 .project-info-wrapper {
@@ -442,6 +474,13 @@ body.scroll #root, body.scroll .App {
   font-weight: 400;
   margin: 5px 0 5px 5px;
 }
+
+@media only screen and (max-width: 700px) {
+  .project-title-wrapper, .project-overview-wrapper {
+    width: 100%;
+  }
+}
+
 /* 
 .project-overview-wrapper a:before {
   content: '';

@@ -35,7 +35,7 @@ class Project extends React.Component {
             // this would be better if it was animating transforms instead of size/position
             .to(this.projectContainer, 0.7, {top: 0, left: 0, height: '100%', width: '100%', ease: Expo.easeInOut}, "-=.5")
             .to(this.projectControls, 0.5, {autoAlpha: 0, ease: Power2.easeOut}, "-=.5")
-            .from(this.projectHeader, 0.5, {y: 150, ease: Power2.easeOut}, "-=.5")
+            .from(this.projectHeader, 0.5, {y: 250, ease: Power2.easeOut}, "-=.5")
             .from(this.closeProject, 0.5, {autoAlpha: 0, ease: Power2.easeIn})
         this.tl.play(0)
     }

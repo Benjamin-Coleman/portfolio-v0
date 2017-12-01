@@ -3,12 +3,9 @@
     [
         {
             "id": "00",
-            "symbol": "Project 1",
+            "symbol": "Flashion",
             "brand": "NIKE",
             "role": "Devloper and Designer",
-            "offsetLeft": 1,
-            "offsetRight": 2,
-            "col": 8,
             "description":"Create your own lookbook to fit your brand. Select your photos, descriptions and product links, pick a template, edit to your style. Send your lookbook out to your customers.",
             "agency": "Google",
             "dev": "React, Redux, Node.js, MongoDB, Express",
@@ -19,23 +16,21 @@
             },
             "img":{
                 "url": "../img/project-1.jpg"
-            }
+            },
+            "data": []
         },
         {
             "id": "01",
-            "symbol": "Project 2",
+            "symbol": "SoccerSim",
             "brand": "ALEXANDRE ROCHET",
             "role": "Devloper and Designer",
-            "offsetLeft": 1,
-            "offsetRight": 2,
-            "col": 8,
-            "description":"Dope work description here to describe the project in a decent amount of words",
+            "description":"Predicted soccer scores based on historical data. Takes into account similar games based on home/away attacking and defensive strength and uses Poisson distribution to predict",
             "agency": "Google",
-            "dev": "React, Rails",
+            "dev": "React, Rails, GSAP",
             "link":{
                 "label": "Visit Website ¬",
-                "url": "https://insidediscovery.pitchfork.com/",
-                "github": ""
+                "url": "",
+                "github": "https://github.com/Benjamin-Coleman/soccer-sim-client"
             },
             "img":{
                 "url": "../img/project-2.jpg"
@@ -43,18 +38,16 @@
         },
         {
             "id": "02",
-            "symbol": "Project 3",
+            "symbol": "Piano Tiles",
             "brand": "ALEXANDRE ROCHET",
             "role": "Devloper and Designer",
-            "offsetLeft": 1,
-            "offsetRight": 2,
-            "col": 8,
-            "description":"Dope work description here to describe the project in a decent amount of words",
+            "description":"Reactions game to test your piano finger speed. Arcade and classic modes with historical high scores.",
             "agency": "Google",
-            "dev": "React, Rails",
+            "dev": "JavaScript, Rails",
             "link":{
                 "label": "Visit Website ¬",
-                "url": "https://insidediscovery.pitchfork.com/"
+                "url": "",
+                "github": "https://github.com/jamesrhee91/tiles-project-front"
             },
             "img":{
                 "url": "../img/project-3.jpg"
@@ -62,18 +55,16 @@
         },
         {
             "id": "03",
-            "symbol": "Project 4",
+            "symbol": "Savr",
             "brand": "ALEXANDRE ROCHET",
             "role": "Devloper and Designer",
-            "offsetLeft": 1,
-            "offsetRight": 2,
-            "col": 8,
-            "description":"Dope work description here to describe the project in a decent amount of words",
+            "description":"Don't let extra food go to waste. Coordinate with other foodies in the area to gain or spend credits by giving and receiving food.",
             "agency": "Google",
-            "dev": "React, Rails",
+            "dev": "Rails, Bootstrap",
             "link":{
                 "label": "Visit Website ¬",
-                "url": "https://insidediscovery.pitchfork.com/"
+                "url": "",
+                "github": "https://github.com/Benjamin-Coleman/savr"
             },
             "img":{
                 "url": "../img/project-4.jpg"
@@ -81,18 +72,16 @@
         },
         {
             "id": "04",
-            "symbol": "Project 5",
+            "symbol": "Teleport",
             "brand": "ALEXANDRE ROCHET",
             "role": "Devloper and Designer",
-            "offsetLeft": 1,
-            "offsetRight": 2,
-            "col": 8,
-            "description":"Dope work description here to describe the project in a decent amount of words",
+            "description":"Explore the world using Teleport's API. Quality of life scores and city comparisons.",
             "agency": "Google",
-            "dev": "React, Rails",
+            "dev": "React, Rails, GSAP",
             "link":{
                 "label": "Visit Website ¬",
-                "url": "https://insidediscovery.pitchfork.com/"
+                "url": "",
+                "github": "https://github.com/yuralala8/teleport"
             },
             "img":{
                 "url": "../img/project-5.jpg"
