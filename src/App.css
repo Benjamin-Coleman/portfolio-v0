@@ -481,6 +481,16 @@ body.scroll #root, body.scroll .App {
   }
 }
 
+.project-story-wrapper {
+  max-width: 960px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.project-story-wrapper video {
+
+}
+
 /* 
 .project-overview-wrapper a:before {
   content: '';

@@ -63,6 +63,12 @@ class Project extends React.Component {
     }
 
     render() {
+        const projectInfo = this.props.currentProject.data.map((section, i) => (
+            <video key={i} src={section.video} playsInline loop="loop" autoPlay="autoPlay"></video>
+        ))
+
+        console.log(projectInfo)
+
         return (
             <div>
                 <DelayLink to='/' delay={1000} onDelayStart={ this.closeProjectAnimation }>
@@ -93,6 +99,9 @@ class Project extends React.Component {
                         <span className='category'>Description</span>
                         <p>{this.props.currentProject.description}</p>
                     </div>
+                </div>
+                <div className="project-story-wrapper">
+                    { projectInfo }
                 </div>
             </div>
         )
