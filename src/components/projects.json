@@ -17,7 +17,7 @@
             "img":{
                 "url": "../img/project-1.jpg"
             },
-            "data": []
+            "data": [{"video": "../video/flashion-1.mp4"}]
         },
         {
             "id": "01",
