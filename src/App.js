@@ -3,6 +3,7 @@ import './App.css';
 import { Route } from 'react-router-dom'
 import { connect } from 'react-redux'
 import { fetchProjectData } from './actions/projectsActions'
+import { screenResize } from './actions/index'
 import SplashScreen from './components/SplashScreen'
 import Header from './components/Header'
 import ProjectContainer from './components/ProjectContainer'
@@ -15,10 +16,31 @@ import data from './components/projects.json'
 
 class App extends Component {
 
-
-
   componentWillMount = () => {
     this.props.fetchProjectData(data)
+  }
+
+  componentDidMount = () => {
+    this.onResize()
+    window.addEventListener('resize', () => this.onResize());
+  }
+
+  onResize = () => {
+    console.log('onResize MainSection -----');
+
+    const width = this.getWidth();
+    const height = this.getHeight();
+
+    this.props.onResize({ width : width , height : height});
+
+  }
+
+  getHeight = () => {
+    return window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+  }
+
+  getWidth = () => {
+    return window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
   }
 
   render() {
@@ -26,10 +48,10 @@ class App extends Component {
       <div className="App">
         <SplashScreen/>
         <div className="wrapper">
-          <Header Route exact path='/' />
-          <About Route exact path='/' />
-          <ProjectContainer Route exact path='/' />
-          <Counter Route exact path='/' />
+          <Route path='/' component={ Header }/>
+          <Route path='/' component={ About }/>
+          <Route path='/' component={ ProjectContainer }/>
+          <Route path='/' component={ Counter }/>
           <Route exact path='/projects/:title' component={Project} />
         </div>
 
@@ -38,10 +60,19 @@ class App extends Component {
   }
 }
 
+const mapStateToProps = (state) => {
+  return {
+    viewport: state.uiReducer
+  }
+}
+
 const mapDispatchToProps = (dispatch) => ({
   fetchProjectData: (data) => {
     dispatch(fetchProjectData(data))
+  },
+  onResize: (viewport) => {
+    dispatch(screenResize(viewport))
   }
 })
 
-export default connect(null, mapDispatchToProps)(App);
+export default connect(mapStateToProps, mapDispatchToProps)(App);

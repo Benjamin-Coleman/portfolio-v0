@@ -2,7 +2,7 @@
 
 html {
   width: 100%;
-  height: 100%;
+  //height: 100%;
   color: #444;
 }
 
@@ -10,7 +10,7 @@ body {
   overflow: hidden;
   background: #fff;
   width: 100%;
-  height: 100%;
+  //height: 100%;
   font-family: "Avenir",sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -42,7 +42,7 @@ body.scroll #root, body.scroll .App {
 }
 
 #root, .App {
-  position: relative;
+  //position: relative;
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -51,8 +51,8 @@ body.scroll #root, body.scroll .App {
 .wrapper {
     /* position: relative;
     width: 100%; */
-    /* height: 100%; */
-    /* overflow: hidden; */
+    height: 100%;
+    overflow: hidden;
 }
 
 /*Splash Screen*/
@@ -365,7 +365,7 @@ body.scroll #root, body.scroll .App {
 }
 
 .scroll-prompt {
-  position: fixed;
+  position: absolute;
   bottom: 50px;
   left: 50px;
   z-index: 5;
@@ -488,7 +488,107 @@ body.scroll #root, body.scroll .App {
 }
 
 .project-story-wrapper video {
+  margin: 0 auto;
+}
 
+.video-player {
+  margin: 2em auto;
+}
+
+.project-section {
+  padding: 2em 0;
+}
+
+.project-section-text {
+  text-align: center;
+  color: #565656;
+  padding: 2em 0;
+  font-family: 'Minion Pro', sans-serif;
+  font-size: 1.5em;
+  font-weight: 400;
+  font-style: italic;
+}
+
+@media only screen and (max-width: 700px) {
+  .project-section-text {
+    font-size: 1em;
+  }
+}
+
+.project-story-end {
+  margin-top: 6em;
+  height: 150px;
+  display: flex;
+}
+
+.project-story-end a {
+  text-decoration: none;
+  width: 50%;
+  display: block;
+}
+
+.project-prev {
+  height: 100%;
+  background-size: cover;
+  background-position: 50% 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-prev:before {
+  content: '';
+  background: rgba(0, 0, 0, 0.6);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 0;
+}
+
+.project-prev h3{
+  text-align: center;
+  font-family: 'Minion Pro', sans-serif;
+  font-size: 2em;
+  font-style: italic;
+  color: rgb(255, 255, 255);
+  position: relative;
+  z-index: 1;
+  font-weight: 400;
+}
+
+.project-next {
+  height: 100%;
+  background-size: cover;
+  background-position: 50% 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-next:before {
+  content: '';
+  background: rgba(0, 0, 0, 0.6);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 0;
+}
+
+.project-next h3{
+  text-align: center;
+  font-family: 'Minion Pro', sans-serif;
+  font-size: 2em;
+  font-style: italic;
+  color: rgb(255, 255, 255);
+  position: relative;
+  z-index: 1;
+  font-weight: 400;
 }
 
 /* 

@@ -2,9 +2,11 @@ import React from 'react'
 import { TimelineMax, Power2, Expo } from 'gsap'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
-import { withRouter } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import DelayLink from './DelayLink'
 import { animateScroll } from 'react-scroll'
+// import { getPositionStart, getPositionEnd } from '../helpers/offset.js'
+import ReactPlayer from 'react-player'
 import * as actions from '../actions/projectsActions'
 
 class Project extends React.Component {
@@ -16,6 +18,12 @@ class Project extends React.Component {
     }
 
     componentDidMount() {
+        // Check if route matches, if so change state
+        this.props.projects.forEach( (project, i) => {
+            if (project.symbol.toLowerCase() === this.props.match.params.title.toLowerCase()) {
+                this.props.actions.setProjectIndex(i)
+            }
+        })
         this.addEventListeners()
         this.props.actions.projectOpen()
         document.querySelector('body').classList.add('scroll')
@@ -62,12 +70,52 @@ class Project extends React.Component {
         this.props.actions.projectClose()
     }
 
+    goPrevProject = () => {
+        const splashScreen = document.querySelector('.splash-screen')
+        splashScreen.classList.remove('--is-hidden')
+        const readyNext = () => {
+            window.scroll(0, 0)
+            this.props.actions.decrementProject()
+        }
+        const tl = new TimelineMax()
+            .to(splashScreen, 1, { opacity: 1, ease: 'Power2', onComplete: readyNext })
+            .to(splashScreen, 1, { opacity: 0, ease: 'Power2', onComplete: () => splashScreen.classList.add('--is-hidden') })
+    }
+
+    goNextProject = () => {
+        const splashScreen = document.querySelector('.splash-screen')
+        splashScreen.classList.remove('--is-hidden')
+        const readyNext = () => {
+            window.scroll(0, 0)
+            this.props.actions.incrementProject()
+        }
+        const tl = new TimelineMax()
+            .to(splashScreen, 1, { opacity: 1, ease: 'Power2', onComplete: readyNext })
+            .to(splashScreen, 1, { opacity: 0, ease: 'Power2', onComplete: () => splashScreen.classList.add('--is-hidden') })
+    }
+
     render() {
         const projectInfo = this.props.currentProject.data.map((section, i) => (
-            <video key={i} src={section.video} playsInline loop="loop" autoPlay="autoPlay"></video>
+            <section className='project-section' key={i}>
+            <p className='project-section-text'>
+                {section.description}
+            </p>
+            <ReactPlayer
+                key={i}
+                className='video-player'
+                url={section.video}
+                playing={true}
+                preload={true}
+                loop={true}
+                muted={true}
+                width={'100%'}
+                height={'auto'}
+            />
+            </section>
         ))
 
-        console.log(projectInfo)
+        const prevProject = this.props.currentIndex > 0 ? this.props.projects[this.props.currentIndex - 1] : this.props.projects[this.props.projects.length - 1]
+        const nextProject = this.props.currentIndex >= this.props.projects.length - 1 ? this.props.projects[0] : this.props.projects[this.props.currentIndex + 1]
 
         return (
             <div>
@@ -102,6 +150,18 @@ class Project extends React.Component {
                 </div>
                 <div className="project-story-wrapper">
                     { projectInfo }
+                </div>
+                <div className="project-story-end">
+                    <Link to={`/projects/${prevProject.symbol}`}>
+                        <div className="project-prev" style={{ backgroundImage: `url(${prevProject.img.url})` }} onClick={this.goPrevProject}>
+                            <h3>Previous Project</h3>
+                        </div>
+                    </Link>
+                    <Link to={`/projects/${nextProject.symbol}`}>
+                        <div className="project-next" style={{ backgroundImage: `url(${nextProject.img.url})` }} onClick={this.goNextProject}>
+                            <h3>Next Project</h3>
+                        </div>
+                    </Link>
                 </div>
             </div>
         )

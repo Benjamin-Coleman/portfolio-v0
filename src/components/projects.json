@@ -17,7 +17,20 @@
             "img":{
                 "url": "../img/project-1.jpg"
             },
-            "data": [{"video": "../video/flashion-1.mp4"}]
+            "data": [
+                {
+                    "video": "../video/flashion-01.mp4",
+                    "description": "Full stack JavaScript application using Node.js utilizing Express framework and Passport for secure login, coupled with a React and GSAP frontend. Pick your template. Add as many products as you want. Live image uploads to a cloud server using local files or use hosted images by entering a URL. Supports drag and drop from desktop."
+                },
+                {
+                    "video": "../video/flashion-02.mp4",
+                    "description": "Editable pages to fit your brand. Move elements around. Control panel to change colors, change fonts, change animation timings ect. Made possible with a flexible MongoDB structure to suit a variety of customizations."
+                },
+                {
+                    "video": "../video/flashion-03.mp4",
+                    "description": "Multiple templates, customizable in different ways. "
+                }
+                ]
         },
         {
             "id": "01",
@@ -34,7 +47,21 @@
             },
             "img":{
                 "url": "../img/project-2.jpg"
-            }
+            },
+            "data": [
+                {
+                    "video": "../video/flashion-01.mp4",
+                    "description": "Full stack JavaScript application using Node.js utilizing Express framework and Passport for secure login, coupled with a React and GSAP frontend. Pick your template. Add as many products as you want. Live image uploads to a cloud server using local files or use hosted images by entering a URL. Supports drag and drop from desktop."
+                },
+                {
+                    "video": "../video/flashion-02.mp4",
+                    "description": "Editable pages to fit your brand. Move elements around. Control panel to change colors, change fonts, change animation timings ect. Made possible with a flexible MongoDB structure to suit a variety of customizations."
+                },
+                {
+                    "video": "../video/flashion-03.mp4",
+                    "description": "Multiple templates, customizable in different ways. "
+                }
+            ]
         },
         {
             "id": "02",
@@ -51,7 +78,21 @@
             },
             "img":{
                 "url": "../img/project-3.jpg"
-            }
+            },
+            "data": [
+                {
+                    "video": "../video/flashion-01.mp4",
+                    "description": "Full stack JavaScript application using Node.js utilizing Express framework and Passport for secure login, coupled with a React and GSAP frontend. Pick your template. Add as many products as you want. Live image uploads to a cloud server using local files or use hosted images by entering a URL. Supports drag and drop from desktop."
+                },
+                {
+                    "video": "../video/flashion-02.mp4",
+                    "description": "Editable pages to fit your brand. Move elements around. Control panel to change colors, change fonts, change animation timings ect. Made possible with a flexible MongoDB structure to suit a variety of customizations."
+                },
+                {
+                    "video": "../video/flashion-03.mp4",
+                    "description": "Multiple templates, customizable in different ways. "
+                }
+            ]
         },
         {
             "id": "03",
@@ -68,7 +109,21 @@
             },
             "img":{
                 "url": "../img/project-4.jpg"
-            }
+            },
+            "data": [
+                {
+                    "video": "../video/flashion-01.mp4",
+                    "description": "Full stack JavaScript application using Node.js utilizing Express framework and Passport for secure login, coupled with a React and GSAP frontend. Pick your template. Add as many products as you want. Live image uploads to a cloud server using local files or use hosted images by entering a URL. Supports drag and drop from desktop."
+                },
+                {
+                    "video": "../video/flashion-02.mp4",
+                    "description": "Editable pages to fit your brand. Move elements around. Control panel to change colors, change fonts, change animation timings ect. Made possible with a flexible MongoDB structure to suit a variety of customizations."
+                },
+                {
+                    "video": "../video/flashion-03.mp4",
+                    "description": "Multiple templates, customizable in different ways. "
+                }
+            ]
         },
         {
             "id": "04",
@@ -85,7 +140,21 @@
             },
             "img":{
                 "url": "../img/project-5.jpg"
-            }
+            },
+            "data": [
+                {
+                    "video": "../video/flashion-01.mp4",
+                    "description": "Full stack JavaScript application using Node.js utilizing Express framework and Passport for secure login, coupled with a React and GSAP frontend. Pick your template. Add as many products as you want. Live image uploads to a cloud server using local files or use hosted images by entering a URL. Supports drag and drop from desktop."
+                },
+                {
+                    "video": "../video/flashion-02.mp4",
+                    "description": "Editable pages to fit your brand. Move elements around. Control panel to change colors, change fonts, change animation timings ect. Made possible with a flexible MongoDB structure to suit a variety of customizations."
+                },
+                {
+                    "video": "../video/flashion-03.mp4",
+                    "description": "Multiple templates, customizable in different ways. "
+                }
+            ]
         }        
     ]
 }
