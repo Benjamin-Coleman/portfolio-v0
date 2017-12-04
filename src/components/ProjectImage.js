@@ -1,5 +1,5 @@
 import React from 'react'
-import { TweenMax, TimelineMax } from 'gsap'
+import { TweenMax } from 'gsap'
 import { connect } from 'react-redux'
 
 
@@ -18,7 +18,7 @@ class ProjectImage extends React.Component {
 	// }
 
 	componentWillReceiveProps = (nextProps) => {
-		let activeImage = document.querySelector('.--is-active')
+		// let activeImage = document.querySelector('.--is-active')
 	// this.tl.clear();
  //    this.tl.kill();
 

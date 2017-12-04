@@ -68,7 +68,7 @@ class About extends React.Component {
                         <span className="about-close" onClick={this.closePanel}>
                             X
                         </span>
-                        <h2>About</h2>
+                        <h2>About Me</h2>
                         <p>Hi, I'm Ben. I'm a fullstack developer with a love for creative design, coffee and basketball. Currently in Brooklyn, NY looking for an opportunity making things.</p>
                         <h4>Get in touch</h4>
                         <p>

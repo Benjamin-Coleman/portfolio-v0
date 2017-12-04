@@ -110,6 +110,7 @@ class Project extends React.Component {
                 muted={true}
                 width={'100%'}
                 height={'auto'}
+                playsinline={true}
             />
             </section>
         ))

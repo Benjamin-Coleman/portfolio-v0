@@ -13,9 +13,13 @@ body {
   //height: 100%;
   font-family: "Avenir",sans-serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   max-height: 100vh;
   line-height: 1.5;
+}
+
+p {
+  font-family: "Avenir",sans-serif;
 }
 
 body.scroll {
@@ -234,12 +238,36 @@ body.scroll #root, body.scroll .App {
 .about-content {
   width: 400px;
   transform: translateX(400px);
-  background: rgb(204, 204, 204);
+  background: rgb(223, 223, 223);
   padding: 3rem;
   top: 0;
   right: 0;
   position: fixed;
   height: 100%;
+}
+
+.about-content a {
+  color: #222;
+  text-decoration: none;
+}
+
+.about-content h2 {
+  font-family: 'minion-pro-display', serif;
+  font-size: 3em;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.about-content h4 {
+  font-family: 'minion-pro-display', serif;
+  font-size: 2em;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.about-content p {
+  font-size: 1.2em;
+  color: #555;
 }
 
 .project-details-wrapper {
@@ -473,6 +501,7 @@ body.scroll #root, body.scroll .App {
   font-family: 'minion-pro-display', sans-serif;
   font-weight: 400;
   margin: 5px 0 5px 5px;
+  width: 200px;
 }
 
 @media only screen and (max-width: 700px) {
@@ -482,13 +511,15 @@ body.scroll #root, body.scroll .App {
 }
 
 .project-story-wrapper {
-  max-width: 960px;
+  max-width: 1000px;
   position: relative;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .project-story-wrapper video {
   margin: 0 auto;
+  max-height: 600px;
 }
 
 .video-player {
@@ -503,7 +534,7 @@ body.scroll #root, body.scroll .App {
   text-align: center;
   color: #565656;
   padding: 2em 0;
-  font-family: 'Minion Pro', sans-serif;
+  font-family: 'minion-pro-display', sans-serif;
   font-size: 1.5em;
   font-weight: 400;
   font-style: italic;
@@ -550,7 +581,7 @@ body.scroll #root, body.scroll .App {
 
 .project-prev h3{
   text-align: center;
-  font-family: 'Minion Pro', sans-serif;
+  font-family: 'minion-pro-display', sans-serif;
   font-size: 2em;
   font-style: italic;
   color: rgb(255, 255, 255);
@@ -582,7 +613,7 @@ body.scroll #root, body.scroll .App {
 
 .project-next h3{
   text-align: center;
-  font-family: 'Minion Pro', sans-serif;
+  font-family: 'minion-pro-display', sans-serif;
   font-size: 2em;
   font-style: italic;
   color: rgb(255, 255, 255);

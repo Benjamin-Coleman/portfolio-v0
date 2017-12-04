@@ -11,13 +11,13 @@ class Counter extends React.Component {
     componentDidMount() {
         this.counter = this.refs.counter
         this.projectNumber = this.refs.projectNumber
-        this.offsetTop = 6
+        this.offsetTop = 8
 
         this.tl.clear()
         this.tl.kill()
 
         this.tl
-            .set(this.counter, {autoAlpha: 0, y: 20})
+            //.set(this.counter, {autoAlpha: 0, y: 20})
             .set(this.projectNumber, {y: this.offsetTop})
             .to(this.counter, 1.5, {autoAlpha: 1, y:0})
     }
@@ -50,8 +50,6 @@ class Counter extends React.Component {
         else if (nextProps.currentIndex === this.props.projects.length - 1) {
             this.tl.clear()
             this.tl.kill()
-
-            console.log('LAST ONE YO')
 
             this.tl
                 .to(this.refs.projectNumber, 0.5, {y: offsetTop, ease: Power4.easeOut})

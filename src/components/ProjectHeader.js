@@ -1,5 +1,5 @@
 import React from 'react'
-import { TweenMax, TimelineMax } from 'gsap'
+import { TimelineMax } from 'gsap'
 
 class ProjectHeader extends React.Component  {
 

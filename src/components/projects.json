@@ -41,7 +41,7 @@
             "agency": "Google",
             "dev": "React, Rails, GSAP",
             "link":{
-                "label": "Visit Website ¬",
+                "label": "Visit Project",
                 "url": "",
                 "github": "https://github.com/Benjamin-Coleman/soccer-sim-client"
             },
@@ -50,16 +50,20 @@
             },
             "data": [
                 {
-                    "video": "../video/flashion-01.mp4",
-                    "description": "Full stack JavaScript application using Node.js utilizing Express framework and Passport for secure login, coupled with a React and GSAP frontend. Pick your template. Add as many products as you want. Live image uploads to a cloud server using local files or use hosted images by entering a URL. Supports drag and drop from desktop."
+                    "video": "../video/soccersim-01.mp4",
+                    "description": "Using real data from previous matches, predict the score outcome of future matches. Attacking and defensive strength is calculated on goals scored or conceeded at home or away and by league competition."
                 },
                 {
-                    "video": "../video/flashion-02.mp4",
-                    "description": "Editable pages to fit your brand. Move elements around. Control panel to change colors, change fonts, change animation timings ect. Made possible with a flexible MongoDB structure to suit a variety of customizations."
+                    "video": "../video/soccersim-02.mp4",
+                    "description": "React and GSAP frontend combined with RESTful Rails backend. Poisson distribution formula used to calculate matrix of predicted goals for each game. Search by team or league to look at the entire season by match day."
                 },
                 {
-                    "video": "../video/flashion-03.mp4",
-                    "description": "Multiple templates, customizable in different ways. "
+                    "video": "../video/soccersim-03.mp4",
+                    "description": "Data is updated to create better predictions as the season progresses using Cron jobs."
+                },
+                {
+                    "video": "../video/soccersim-04.mp4",
+                    "description": "View previously predicted outcomes versus actual outcome to assess accuracy."
                 }
             ]
         },
@@ -72,7 +76,7 @@
             "agency": "Google",
             "dev": "JavaScript, Rails",
             "link":{
-                "label": "Visit Website ¬",
+                "label": "View Project",
                 "url": "",
                 "github": "https://github.com/jamesrhee91/tiles-project-front"
             },
@@ -81,16 +85,16 @@
             },
             "data": [
                 {
-                    "video": "../video/flashion-01.mp4",
-                    "description": "Full stack JavaScript application using Node.js utilizing Express framework and Passport for secure login, coupled with a React and GSAP frontend. Pick your template. Add as many products as you want. Live image uploads to a cloud server using local files or use hosted images by entering a URL. Supports drag and drop from desktop."
+                    "video": "../video/pianotiles-01.mp4",
+                    "description": "Reactions based music game."
                 },
                 {
-                    "video": "../video/flashion-02.mp4",
-                    "description": "Editable pages to fit your brand. Move elements around. Control panel to change colors, change fonts, change animation timings ect. Made possible with a flexible MongoDB structure to suit a variety of customizations."
+                    "video": "../video/pianotiles-02.mp4",
+                    "description": "Using JavaScript animation frames, and a Rails backend to store high scores data. RESTful API setup."
                 },
                 {
-                    "video": "../video/flashion-03.mp4",
-                    "description": "Multiple templates, customizable in different ways. "
+                    "video": "../video/pianotiles-03.mp4",
+                    "description": "Arcade and classic mode. Arcade increases over time, high scores are amount of tiles completed until a miss. Classic mode tests your finger speed to complete a 30 note song. Complete with randomized audio tracks."
                 }
             ]
         },
@@ -103,7 +107,7 @@
             "agency": "Google",
             "dev": "Rails, Bootstrap",
             "link":{
-                "label": "Visit Website ¬",
+                "label": "View Project",
                 "url": "",
                 "github": "https://github.com/Benjamin-Coleman/savr"
             },
@@ -112,16 +116,16 @@
             },
             "data": [
                 {
-                    "video": "../video/flashion-01.mp4",
-                    "description": "Full stack JavaScript application using Node.js utilizing Express framework and Passport for secure login, coupled with a React and GSAP frontend. Pick your template. Add as many products as you want. Live image uploads to a cloud server using local files or use hosted images by entering a URL. Supports drag and drop from desktop."
+                    "video": "../video/savr-01.mp4",
+                    "description": "Crowd sourcing application to coordinate people with too much food and those looking to place a bid on extra food."
                 },
                 {
-                    "video": "../video/flashion-02.mp4",
-                    "description": "Editable pages to fit your brand. Move elements around. Control panel to change colors, change fonts, change animation timings ect. Made possible with a flexible MongoDB structure to suit a variety of customizations."
+                    "video": "../video/savr-02.mp4",
+                    "description": "Full stack Rails application to practice maintaining database relationships and encypted logins."
                 },
                 {
-                    "video": "../video/flashion-03.mp4",
-                    "description": "Multiple templates, customizable in different ways. "
+                    "video": "../video/savr-03.mp4",
+                    "description": "Gain karma by successfully donating food that receives a bid. Keep track of previous bids and history of your food."
                 }
             ]
         },
@@ -143,16 +147,12 @@
             },
             "data": [
                 {
-                    "video": "../video/flashion-01.mp4",
-                    "description": "Full stack JavaScript application using Node.js utilizing Express framework and Passport for secure login, coupled with a React and GSAP frontend. Pick your template. Add as many products as you want. Live image uploads to a cloud server using local files or use hosted images by entering a URL. Supports drag and drop from desktop."
+                    "video": "../video/teleport-01.mp4",
+                    "description": "Using Teleport's API to map quality of life statistics from all over the world. Google Maps API integration to further the data brought in from Teleport."
                 },
                 {
-                    "video": "../video/flashion-02.mp4",
-                    "description": "Editable pages to fit your brand. Move elements around. Control panel to change colors, change fonts, change animation timings ect. Made possible with a flexible MongoDB structure to suit a variety of customizations."
-                },
-                {
-                    "video": "../video/flashion-03.mp4",
-                    "description": "Multiple templates, customizable in different ways. "
+                    "video": "../video/teleport-02.mp4",
+                    "description": "Built in React to create an intuitive UI. Compare any two cities in a variety of metrics to help you decide where to visit or move to."
                 }
             ]
         }        

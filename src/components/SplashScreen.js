@@ -22,9 +22,6 @@ export default class SplashScreen extends React.Component {
 	render() {
 		return (
 			<div className="splash-screen" ref="splashScreen">
-				<div>
-					<h2></h2>
-				</div>
 			</div>
 			)
 	}

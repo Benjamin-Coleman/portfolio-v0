@@ -5,11 +5,17 @@ import * as actions from '../actions/projectsActions'
 
 const ProjectControls = (props) => {
 
-	const handleNext = () => {
+	const handleNext = e => {
+		e.preventDefault()
+		e.stopPropagation()
+		e.nativeEvent.stopImmediatePropagation()
 		props.actions.incrementProject()
 	}
 
-	const handlePrevious = () => {
+	const handlePrevious = e => {
+		e.preventDefault()
+		e.stopPropagation()
+		e.nativeEvent.stopImmediatePropagation()
 		props.actions.decrementProject()
 	}
 

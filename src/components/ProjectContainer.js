@@ -1,6 +1,6 @@
 import React from 'react'
 import data from './projects.json'
-import { TweenMax, TimelineMax } from 'gsap'
+import { TimelineMax } from 'gsap'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import { Link } from 'react-router-dom'
@@ -9,7 +9,7 @@ import ProjectImage from './ProjectImage'
 import ProjectControls from './ProjectControls'
 import ProjectHeader from './ProjectHeader'
 import ProjectDetails from './ProjectDetails'
-import { projectOpen } from '../actions/projectsActions';
+// import { projectOpen } from '../actions/projectsActions';
 
 class ProjectContainer extends React.Component {
 
@@ -136,16 +136,17 @@ class ProjectContainer extends React.Component {
 		const sanitizedURL = '/projects/' + this.props.projects[this.props.currentIndex].symbol.split(' ').join('').toLowerCase()
 		console.log(this.props)
 		return (
-			<div className="projects-container">
-				<ProjectImage />
-				<ProjectControls currentProject={this.state.currentProject} nextProject={this.nextProject} previousProject={this.previousProject} />
-				<Link to={sanitizedURL}>
-				<div className='project-details-wrapper'>
-					<ProjectHeader title={this.state.projects[this.props.currentIndex].symbol} />
-					<ProjectDetails currentProjectData={this.state.projects[this.props.currentIndex]}/>
+			<Link to={sanitizedURL}>
+				<div className="projects-container">
+					<ProjectImage />
+					<ProjectControls currentProject={this.state.currentProject} nextProject={this.nextProject} previousProject={this.previousProject} />
+					
+					<div className='project-details-wrapper'>
+						<ProjectHeader title={this.state.projects[this.props.currentIndex].symbol} />
+						<ProjectDetails currentProjectData={this.state.projects[this.props.currentIndex]}/>
+					</div>
 				</div>
-				</Link>
-			</div>
+			</Link>
 			)
 	}
 }
