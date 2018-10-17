@@ -59,7 +59,6 @@ class About extends React.Component {
     }
 
     render() {
-        console.log(this)
         return (
             <div>
                 <div ref="aboutText" className="about-text" onClick={this.openPanel}><p>About</p></div>
@@ -69,7 +68,7 @@ class About extends React.Component {
                             X
                         </span>
                         <h2>About Me</h2>
-                        <p>Hi, I'm Ben. I'm a fullstack developer with a love for creative design, coffee and basketball. Currently in Brooklyn, NY looking for an opportunity making things.</p>
+                        <p>Hi, I'm Ben. I'm a fullstack developer with a love for creative design, coffee and basketball. Currently in Brooklyn, NY making things.</p>
                         <h4>Get in touch</h4>
                         <p>
                             <a href="mailto:hello@benjamincoleman.me" rel="noopener noreferrer" target="_blank">Mail</a> / <a href="https://github.com/Benjamin-Coleman" rel="noopener noreferrer" target="_blank">Github</a> / <a href="https://medium.com/@benjamin.c.coleman/" rel="noopener noreferrer" target="_blank">Medium</a>

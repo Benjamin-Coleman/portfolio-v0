@@ -26,7 +26,6 @@ class App extends Component {
   }
 
   onResize = () => {
-    console.log('onResize MainSection -----');
 
     const width = this.getWidth();
     const height = this.getHeight();

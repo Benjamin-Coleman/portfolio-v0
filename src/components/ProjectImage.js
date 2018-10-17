@@ -34,7 +34,6 @@ class ProjectImage extends React.Component {
 
 	render() {
 		const projectImages = this.props.projects.map((project, index) => <img key={index} className={index === this.props.currentIndex ? "project project-image --is-active" : "project project-image"} ref="projectImage" src={project.img.url} alt={project.img.url}/>)
-		console.log(this.props)
 		return (
 			<div className="project project-image-wrapper">
 				{projectImages}

@@ -4,6 +4,7 @@ import { TimelineMax } from 'gsap'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import { Link } from 'react-router-dom'
+import Hammer from 'hammerjs'
 import * as actions from '../actions/projectsActions'
 import ProjectImage from './ProjectImage'
 import ProjectControls from './ProjectControls'
@@ -27,6 +28,42 @@ class ProjectContainer extends React.Component {
 	componentDidMount = () => {
 		this.addListerners()
 		this.visualEls = document.getElementsByClassName('project project-image');
+		this.projectContainer = document.querySelector('.projects-container');
+
+    	// // Create a manager to manager the element
+		// const manager = new Hammer.Manager(document.querySelector('.project-image'));
+		
+		// // Create a recognizer
+		// const Swipe = new Hammer.Swipe();
+
+		// // Add the recognizer to the manager
+		// manager.add(Swipe);
+
+		// manager.on('swipe', function(e) {
+		// 	var direction = e.offsetDirection;
+		// 	if (direction === 4) {
+		// 	}
+		// 	}
+		// )
+
+		var mc = new Hammer(this.projectContainer);
+
+		// listen to events...
+		mc.on("panleft", ev => {
+			if (this.canScroll) {
+				this.canScroll = false
+				setTimeout(() => this.canScroll = true, 400)
+				this.props.actions.decrementProject();
+			}
+		});
+
+		mc.on("panright",ev => {
+			if (this.canScroll) {
+				this.canScroll = false;
+				setTimeout(() => (this.canScroll = true), 400);
+				this.props.actions.incrementProject();
+			}
+		});
 
     	this.visualEls[0].classList.add('--is-active')
 	}
@@ -74,7 +111,7 @@ class ProjectContainer extends React.Component {
 
 			this.props.actions.decrementProject()
 		}
-	}
+	};
 
 	// nextProject = () => {
 	// 	console.log('going to next project')
@@ -134,7 +171,6 @@ class ProjectContainer extends React.Component {
 
 	render() {
 		const sanitizedURL = '/projects/' + this.props.projects[this.props.currentIndex].symbol.split(' ').join('').toLowerCase()
-		console.log(this.props)
 		return (
 			<Link to={sanitizedURL}>
 				<div className="projects-container">

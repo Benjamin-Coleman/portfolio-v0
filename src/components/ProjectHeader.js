@@ -21,7 +21,6 @@ class ProjectHeader extends React.Component  {
 	}
 
 	componentWillReceiveProps = (nextProps) => {
-		console.log('project header changed')
 		// TweenMax.fromTo(this.refs.projectHeader, 1, {y: 200}, {y: 0, ease: 'Power2'})
 		// TweenMax.fromTo(this.refs.headerOverlay, 2, {scaleX: 1, ease: 'Power2'}, {scaleX: 0, ease: 'Power2'})
 		this.tl.clear();

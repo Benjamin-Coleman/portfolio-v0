@@ -22,7 +22,6 @@
       }
       case "NEXT_PROJECT": {
         const currentIndex = (state.currentIndex < state.projects.length - 1 ) ? state.currentIndex + 1 : 0;
-        console.log(state)
         return {...state, currentIndex: currentIndex}
       }
       case "PREVIOUS_PROJECT": {
