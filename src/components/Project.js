@@ -62,12 +62,7 @@ class Project extends React.Component {
         { autoAlpha: 0, ease: Power2.easeOut },
         "-=.5"
       )
-      .from(
-        this.projectHeader,
-        0.5,
-        { autoAlpha: 0, y: 250, ease: Power2.easeOut },
-        "-=.5"
-      )
+      .from(this.projectHeader, 0.5, { y: 250, ease: Power2.easeOut }, "-=.5")
       .from(this.scrollPrompt, 0.3, {
         autoAlpha: 0,
         x: -10,

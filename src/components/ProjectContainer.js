@@ -28,7 +28,7 @@ class ProjectContainer extends React.Component {
     this.visualEls = document.getElementsByClassName("project project-image");
     this.projectContainer = document.querySelector(".projects-container");
     this.mc = new Hammer.Manager(this.projectContainer, {
-      recognizers: [[Hammer.Pan], [Hammer.Swipe]]
+      recognizers: [[Hammer.Pan, { direction: Hammer.DIRECTION_HORIZONTAL }]]
     });
     this.addListerners();
 

@@ -461,6 +461,10 @@ body.scroll .App {
   .project-header h1 {
     font-size: 2em;
   }
+  .scroll-prompt {
+    bottom: 20px;
+    left: 10px;
+  }
 }
 
 .project-info-wrapper {
