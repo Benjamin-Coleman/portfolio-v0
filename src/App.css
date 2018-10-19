@@ -1,4 +1,4 @@
-@import 'Fonts.css';
+@import "Fonts.css";
 
 html {
   width: 100%;
@@ -9,7 +9,7 @@ body {
   overflow: hidden;
   background: #fff;
   width: 100%;
-  font-family: "Avenir",sans-serif;
+  font-family: "Avenir", sans-serif;
   font-style: normal;
   font-weight: 300;
   max-height: 100vh;
@@ -17,7 +17,7 @@ body {
 }
 
 p {
-  font-family: "Avenir",sans-serif;
+  font-family: "Avenir", sans-serif;
 }
 
 body.scroll {
@@ -39,21 +39,23 @@ body::-webkit-scrollbar {
   color: white;
 }
 
-body.scroll #root, body.scroll .App {
+body.scroll #root,
+body.scroll .App {
   overflow: auto;
 }
 
-#root, .App {
+#root,
+.App {
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
 
 .wrapper {
-    /* position: relative;
+  /* position: relative;
     width: 100%; */
-    height: 100%;
-    overflow: hidden;
+  height: 100%;
+  overflow: hidden;
 }
 
 /*Splash Screen*/
@@ -79,13 +81,13 @@ body.scroll #root, body.scroll .App {
 /*Projects*/
 
 .projects-container {
-    top: 70px;
-    left: 70px;
-    width: calc(100% - 140px);
-    height: calc(100% - 140px);
-    position: absolute;
-    overflow: hidden;
-/*    width: 85%;
+  top: 70px;
+  left: 70px;
+  width: calc(100% - 140px);
+  height: calc(100% - 140px);
+  position: absolute;
+  overflow: hidden;
+  /*    width: 85%;
     max-width: 600px;
     top: 50%;
     left: 50%;
@@ -107,10 +109,11 @@ body.scroll #root, body.scroll .App {
   z-index: 0;
   opacity: 0;
   transform: scale(1.08);
-  transition: opacity 300ms ease, transform 1300ms cubic-bezier(0.01, 1, 0.26, 0.93);
+  transition: opacity 300ms ease,
+    transform 1300ms cubic-bezier(0.01, 1, 0.26, 0.93);
 }
 
-.project.project-image.--is-active{
+.project.project-image.--is-active {
   opacity: 1;
   z-index: 2;
   transform: scale(1);
@@ -126,7 +129,7 @@ body.scroll #root, body.scroll .App {
 
 .about-text p {
   text-transform: uppercase;
-  font-size: .8em;
+  font-size: 0.8em;
   letter-spacing: 2px;
   color: #585858;
 }
@@ -142,10 +145,10 @@ body.scroll #root, body.scroll .App {
 
 .header p {
   text-transform: uppercase;
-  font-size: .8em;
+  font-size: 0.8em;
   letter-spacing: 2px;
   color: #585858;
-  font-family: 'Avenir', sans-serif;
+  font-family: "Avenir", sans-serif;
   font-weight: 300;
 }
 
@@ -199,18 +202,18 @@ body.scroll #root, body.scroll .App {
   color: #fff;
   margin: 0;
   opacity: 0;
-  font-family: "minion-pro-display",serif;
+  font-family: "minion-pro-display", serif;
   font-style: normal;
   font-weight: 400;
 }
 
-.header-overlay{
-    width: 100%;
-    height: 100%;
-    background: white;
-    position: absolute;
-    transform: scaleX(0);
-    transform-origin: left;
+.header-overlay {
+  width: 100%;
+  height: 100%;
+  background: white;
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: left;
 }
 
 /* About */
@@ -255,14 +258,14 @@ body.scroll #root, body.scroll .App {
 }
 
 .about-content h2 {
-  font-family: 'minion-pro-display', serif;
+  font-family: "minion-pro-display", serif;
   font-size: 3em;
   font-weight: 400;
   font-style: italic;
 }
 
 .about-content h4 {
-  font-family: 'minion-pro-display', serif;
+  font-family: "minion-pro-display", serif;
   font-size: 2em;
   font-weight: 400;
   font-style: italic;
@@ -303,14 +306,14 @@ body.scroll #root, body.scroll .App {
 }
 
 .project-description-wrapper {
-    overflow: hidden;
-    position: relative;
-    z-index: 4;
-    max-width: 700px;
+  overflow: hidden;
+  position: relative;
+  z-index: 4;
+  max-width: 700px;
 }
 
 .project-description-wrapper p {
-  color: rgba(255, 255, 255, 0.80);
+  color: rgba(255, 255, 255, 0.8);
   font-size: 18px;
   letter-spacing: 0.02em;
   line-height: 1.3;
@@ -319,17 +322,17 @@ body.scroll #root, body.scroll .App {
 }
 
 .project-tech-wrapper {
-    overflow: hidden;
-    top: 0;
-    position: absolute;
-    z-index: 4;
-    max-width: 600px;
+  overflow: hidden;
+  top: 0;
+  position: absolute;
+  z-index: 4;
+  max-width: 600px;
 }
 
 .project-tech-wrapper p {
   color: rgba(255, 255, 255, 0.8);
   font-size: 12px;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   margin-left: 5px;
 }
@@ -357,7 +360,7 @@ body.scroll #root, body.scroll .App {
 }
 
 .counter p {
-  font-family: "minion-pro-display",serif;
+  font-family: "minion-pro-display", serif;
   font-size: 2em;
   letter-spacing: 10px;
   margin: 0;
@@ -372,7 +375,7 @@ body.scroll #root, body.scroll .App {
 
 .numbers span {
   display: block;
-  font-family: "minion-pro-display",serif;
+  font-family: "minion-pro-display", serif;
   font-size: 2em;
   letter-spacing: 10px;
   margin: 0;
@@ -407,7 +410,6 @@ body.scroll #root, body.scroll .App {
   bottom: 50px;
   left: 50px;
   z-index: 5;
-
 }
 
 .scroll-prompt p {
@@ -417,17 +419,23 @@ body.scroll #root, body.scroll .App {
   font-size: 16px;
   text-transform: uppercase;
   color: white;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 .scroll-prompt .arrow {
-  animation: 'bounce' 2s infinite;
+  animation: "bounce" 2s infinite;
 }
 
 @keyframes bounce {
-  0% {transform: translateY(0px) rotate(-90deg)}
-  50% {transform: translateY(10px) rotate(-90deg)}
-  100% {transform: translateY(0px) rotate(-90deg)}
+  0% {
+    transform: translateY(0px) rotate(-90deg);
+  }
+  50% {
+    transform: translateY(10px) rotate(-90deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(-90deg);
+  }
 }
 
 .project-header {
@@ -442,7 +450,7 @@ body.scroll #root, body.scroll .App {
 .project-header h1 {
   font-size: 6em;
   color: white;
-  font-weight: 700;
+  font-weight: 500;
   text-transform: uppercase;
   text-align: center;
   display: block;
@@ -480,7 +488,7 @@ body.scroll #root, body.scroll .App {
 
 .project-title-wrapper h2 {
   font-size: 3em;
-  font-family: "minion-pro-display",serif;
+  font-family: "minion-pro-display", serif;
   font-style: italic;
   font-weight: 400;
   color: #111111;
@@ -488,15 +496,15 @@ body.scroll #root, body.scroll .App {
 }
 
 .project-title-wrapper h3 {
-    font-weight: 400;
-    margin: 10px 0;
-    font-size: 1.1em;
+  font-weight: 400;
+  margin: 10px 0;
+  font-size: 1.1em;
 }
 
 .project-overview-wrapper p {
   font-size: 1.2em;
   margin: 10px 0;
-} 
+}
 
 .project-overview-wrapper a {
   position: relative;
@@ -508,14 +516,15 @@ body.scroll #root, body.scroll .App {
   /* text-transform: uppercase; */
   font-style: italic;
   letter-spacing: 1px;
-  font-family: 'minion-pro-display', sans-serif;
+  font-family: "minion-pro-display", sans-serif;
   font-weight: 400;
   margin: 5px 0 5px 5px;
   width: 200px;
 }
 
 @media only screen and (max-width: 700px) {
-  .project-title-wrapper, .project-overview-wrapper {
+  .project-title-wrapper,
+  .project-overview-wrapper {
     width: 100%;
   }
 }
@@ -544,7 +553,7 @@ body.scroll #root, body.scroll .App {
   text-align: center;
   color: #565656;
   padding: 2em 0;
-  font-family: 'minion-pro-display', sans-serif;
+  font-family: "minion-pro-display", sans-serif;
   font-size: 1.5em;
   font-weight: 400;
   font-style: italic;
@@ -579,7 +588,7 @@ body.scroll #root, body.scroll .App {
 }
 
 .project-prev:before {
-  content: '';
+  content: "";
   background: rgba(0, 0, 0, 0.6);
   top: 0;
   left: 0;
@@ -589,9 +598,9 @@ body.scroll #root, body.scroll .App {
   z-index: 0;
 }
 
-.project-prev h3{
+.project-prev h3 {
   text-align: center;
-  font-family: 'minion-pro-display', sans-serif;
+  font-family: "minion-pro-display", sans-serif;
   font-size: 2em;
   font-style: italic;
   color: rgb(255, 255, 255);
@@ -611,7 +620,7 @@ body.scroll #root, body.scroll .App {
 }
 
 .project-next:before {
-  content: '';
+  content: "";
   background: rgba(0, 0, 0, 0.6);
   top: 0;
   left: 0;
@@ -621,9 +630,9 @@ body.scroll #root, body.scroll .App {
   z-index: 0;
 }
 
-.project-next h3{
+.project-next h3 {
   text-align: center;
-  font-family: 'minion-pro-display', sans-serif;
+  font-family: "minion-pro-display", sans-serif;
   font-size: 2em;
   font-style: italic;
   color: rgb(255, 255, 255);
